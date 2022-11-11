@@ -1,0 +1,172 @@
+<template>
+  <div>
+    <div class="flex">
+      <div
+        class="
+          bg-blue-400
+          hidden
+          2xl:block
+          xl:block
+          lg:hidden
+          w-4/12
+          ml-5
+          rounded-xl
+          h-screen
+        "
+      ></div>
+      <div class="w-2/3 flex mt-48 items-center h-36 justify-center">
+        <div
+          class="
+            card
+            2xl:ml-0
+            xl:ml-0
+            lg:ml-56
+            md:ml-72
+            ml-32
+            2xl:w-96
+            xl:w-96
+            lg:w-96
+            md:w-80
+            w-full
+            bg-base-100
+            shadow-xl
+          "
+        >
+          <div class="card-body">
+            <div class="flex card-title items-center justify-center">logo</div>
+            <div
+              class="
+                flex
+                2xl:px-10
+                xl:px-10
+                lg:px-10
+                md:px-2
+                px-2
+                justify-between
+              "
+            >
+              <div>welcome</div>
+            </div>
+            <div
+              class="
+                card-title
+                2xl:text-base
+                xl:text-base
+                lg:text-sm
+                text-base
+                md:text-base
+                2xl:ml-10
+                xl:ml-10
+                lg:ml-10
+                md:ml-2
+                ml-2
+              "
+            >
+              enter your username the login
+            </div>
+            <div class="flex flex-col">
+              <input
+                placeholder="usernameorphonenumber"
+                class="
+                  border
+                  mt-3
+                  2xl:ml-10
+                  xl:ml-10
+                  lg:ml-10
+                  md:ml-2
+                  ml-2
+                  w-52
+                  border-black
+                  input
+                "
+                type="text"
+              />
+              <input
+                placeholder="password"
+                type="password"
+                class="
+                  border
+                  2xl:ml-10
+                  xl:ml-10
+                  lg:ml-10
+                  md:ml-2
+                  ml-2
+                  mt-5
+                  w-52
+                  border-black
+                  input
+                "
+              />
+            </div>
+            <div>
+              <nuxt-link
+                class="2xl:ml-10 xl:ml-10 lg:ml-10 md:ml-2 ml-2 text-blue-200"
+                to="/forgotpassword"
+                >forgotPassword</nuxt-link
+              >
+            </div>
+            <div
+              class="
+                card-actions
+                2xl:flex
+                xl:flex
+                lg:flex-col
+                md:flex-col
+                flex-col
+              "
+            >
+              <button
+                @click="routerChange"
+                class="
+                  btn
+                  w-52
+                  2xl:ml-10
+                  xl:ml-10
+                  lg:ml-10
+                  md:ml-2
+                  ml-2
+                  btn-primary
+                  mt-3
+                "
+              >
+                Login
+              </button>
+              <button
+                @click="routerChangeOne"
+                class="
+                  btn
+                  w-52
+                  2xl:ml-10
+                  xl:ml-10
+                  lg:ml-10
+                  md:ml-2
+                  ml-2
+                  btn-primary
+                  mt-3
+                "
+              >
+                Signup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+  
+  <script>
+export default {
+  methods: {
+    routerChange() {
+      this.$router.push("/admin");
+    },
+    routerChangeOne() {
+      this.$router.push("/signup");
+    },
+  },
+};
+</script>
+  
+  <style>
+</style>
