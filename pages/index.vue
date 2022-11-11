@@ -1,12 +1,11 @@
 <template>
-  <div style="height: 800px" class="bg-gray-300 h-screen">
+  <div class="bg-gray-300 h-full">
     <div class="flex">
       <div
-        style="height: 680px"
         class="
           w-3/12
           hidden
-          h-full
+          h-screen
           2xl:block
           xl:block
           lg:hidden
@@ -16,27 +15,27 @@
         "
       >
         <div class="flex items-center justify-center">
-          <img class="mt-10" src="user.png" alt="" />
+          <img class="mt-4" src="user.png" alt="" />
         </div>
         <div class="flex flex-col items-center justify-center">
           <div class="text-white">michael</div>
           <div class="text-white">graphics</div>
         </div>
 
-        <div class="text-white mt-5 ml-3">latest masseges</div>
-        <div class="card w-64 ml-3 mt-3 bg-base-100 shadow-xl">
+        <div class="text-white ml-3">latest masseges</div>
+        <div class="card w-64 h-28 ml-3 mt-3 bg-base-100 shadow-xl">
           <div class="card-body">
             <h2 class="card-title">title</h2>
             <p>text:</p>
           </div>
         </div>
-        <div class="card mt-3 w-64 ml-3 bg-base-100 shadow-xl">
+        <div class="card mt-3 w-64 h-28 ml-3 bg-base-100 shadow-xl">
           <div class="card-body">
             <h2 class="card-title">title</h2>
             <p>text:</p>
           </div>
         </div>
-        <div class="card w-64 mt-3 ml-3 bg-base-100 shadow-xl">
+        <div class="card w-64 h-28 mt-3 ml-3 bg-base-100 shadow-xl">
           <div class="card-body">
             <h2 class="card-title">title</h2>
             <p>text:</p>
