@@ -2,7 +2,7 @@
   <div style="height: 800px" class="bg-gray-300 h-screen">
     <div class="flex">
       <div
-        style="height: 800px"
+        style="height: 680px"
         class="
           w-3/12
           hidden
@@ -24,19 +24,13 @@
         </div>
 
         <div class="text-white mt-5 ml-3">latest masseges</div>
-        <div class="card w-64 ml-3 bg-base-100 shadow-xl">
+        <div class="card w-64 ml-3 mt-3 bg-base-100 shadow-xl">
           <div class="card-body">
             <h2 class="card-title">title</h2>
             <p>text:</p>
           </div>
         </div>
         <div class="card mt-3 w-64 ml-3 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">title</h2>
-            <p>text:</p>
-          </div>
-        </div>
-        <div class="card w-64 mt-3 ml-3 bg-base-100 shadow-xl">
           <div class="card-body">
             <h2 class="card-title">title</h2>
             <p>text:</p>
