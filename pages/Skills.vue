@@ -159,6 +159,7 @@ export default {
     AppTabsTwo,
     skillsOne,
   },
+
   data() {
     return {
       tabList: ["+AddNewSkils"],

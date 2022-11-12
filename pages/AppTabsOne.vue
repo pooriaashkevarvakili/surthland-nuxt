@@ -21,7 +21,7 @@
       <li
         v-for="(tab, index) in tabList"
         :key="index"
-        class="w-4/12 px-4 py-1.5 rounded-lg"
+        class="w-5/12 flex items-center justify-center px-4 py-1.5 rounded-lg"
         :class="{
           'text-blue-600  shadow-xl': index + 1 === activeTab,
           'text-white': index + 1 !== activeTab,

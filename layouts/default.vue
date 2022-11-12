@@ -61,7 +61,7 @@
 
         <div class="flex-1 hidden lg:block">
           <ul class="menu menu-horizontal">
-            <li><nuxt-link to="/">Home</nuxt-link></li>
+            <li><nuxt-link to="/header">Home</nuxt-link></li>
             <li><nuxt-link to="/resume">Resume</nuxt-link></li>
             <li><nuxt-link to="/jobs">jobs</nuxt-link></li>
           </ul>
@@ -93,7 +93,7 @@
       <label for="my-drawer-3" class="drawer-overlay"></label>
       <ul class="menu p-4 w-80 bg-base-100">
         <!-- Sidebar content here -->
-        <li><nuxt-link to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="/header">Home</nuxt-link></li>
         <li><nuxt-link to="/resume">Resume</nuxt-link></li>
         <li><nuxt-link to="/jobs">jobs</nuxt-link></li>
       </ul>

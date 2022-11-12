@@ -149,7 +149,7 @@
 export default {
   methods: {
     routerChange() {
-      this.$router.push("/admin");
+      this.$router.push("/header");
     },
     routerChangeOne() {
       this.$router.push("/signup");

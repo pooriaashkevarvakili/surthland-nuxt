@@ -19,10 +19,7 @@
       </div>
     </div>
     <div class="">
-      <app-tabs-one
-        class="w-11/12 lg:w-full md:w-full mb-16"
-        :tabList="tabList"
-      >
+      <app-tabs-one class="w-full lg:w-full md:w-full mb-16" :tabList="tabList">
         <template v-slot:tabPanel-1>
           <div class="flex justify-between">
             <label for="my-modal-5" class="cursor-pointer"
@@ -100,8 +97,12 @@
               </svg>
             </div>
           </div>
-          <div class="flex justify-between">
-            <div>experience 2</div>
+          <div
+            v-for="item in experience"
+            :key="item.id"
+            class="flex justify-between"
+          >
+            <div>{{ item.name }}</div>
             <div>
               <div class="flex">
                 <svg
@@ -119,6 +120,7 @@
                   />
                 </svg>
                 <svg
+                  @click.prevent="deleteExperience(item.id)"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -143,9 +145,20 @@
   
   <script>
 import AppTabsOne from "./AppTabsOne.vue";
+import { mapState } from "vuex";
 export default {
   components: {
     AppTabsOne,
+  },
+  computed: {
+    ...mapState({
+      experience: (state) => state.experience,
+    }),
+  },
+  methods: {
+    deleteExperience(id) {
+      this.$store.dispatch("deleteExperience", id);
+    },
   },
   data() {
     return {

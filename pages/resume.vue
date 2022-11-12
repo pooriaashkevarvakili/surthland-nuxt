@@ -30,7 +30,19 @@
               src="user.png"
               alt=""
             />
-            <div class="flex flex-col 2xl:ml-0 xl:ml-0 lg:ml-32 md:ml-20 ml-32">
+            <div
+              class="
+                flex
+                2xl:mt-3
+                xl:mt-3
+                flex-col
+                2xl:ml-3
+                xl:ml-3
+                lg:ml-32
+                md:ml-20
+                ml-32
+              "
+            >
               <div>Micheal mishel</div>
               <div>Graphic Designer</div>
             </div>
