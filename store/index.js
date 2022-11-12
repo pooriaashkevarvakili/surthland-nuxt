@@ -35,6 +35,12 @@ export const mutations = {
     deleteSkills(state, id) {
         state.skills = state.skills.filter(todo => todo.id != id)
 
+    },
+    addEducation(state, name) {
+        state.education.push(name)
+    },
+    addExperience(state, name) {
+        state.experience.push(name)
     }
 }
 export const actions = {
@@ -46,5 +52,11 @@ export const actions = {
     },
     deleteSkills({ commit }, id) {
         commit('deleteSkills', id)
+    },
+    addEducation({ commit }, name) {
+        commit('addEducation', name)
+    },
+    addExperience({ commit }, name) {
+        commit('addExperience', name)
     }
 }
