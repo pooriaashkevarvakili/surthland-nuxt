@@ -1,19 +1,9 @@
 <template>
   <div>
     <div class="flex">
-      <div
-        class="
-          bg-blue-400
-          hidden
-          2xl:block
-          xl:block
-          lg:hidden
-          w-4/12
-          ml-5
-          rounded-xl
-          h-screen
-        "
-      ></div>
+      <div class="hidden 2xl:block xl:block lg:hidden w-4/12 ml-5 rounded-xl">
+        <img class="w-72 h-screen ml-6" src="logo.png" alt="" />
+      </div>
       <div class="w-2/3 flex mt-48 items-center h-36 justify-center">
         <div
           class="

@@ -2,20 +2,9 @@
   <div>
     <div class="flex">
       <div class="w-1/2">
-        <div
-          class="
-            ml-10
-            hidden
-            2xl:block
-            xl:block
-            lg:hidden
-            md:hidden
-            bg-blue-500
-            rounded-xl
-            w-64
-            h-screen
-          "
-        ></div>
+        <div class="ml-10 hidden 2xl:block xl:block lg:hidden md:hidden">
+          <img src="logo.png" class="w-72 h-screen ml-6" alt="" />
+        </div>
       </div>
       <div
         class="

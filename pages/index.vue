@@ -1,65 +1,55 @@
 <template>
   <div class="bg-gray-300 h-full">
     <div class="flex">
-      <div
-        class="
-          w-3/12
-          hidden
-          h-screen
-          2xl:block
-          xl:block
-          lg:hidden
-          md:hidden
-          ml-10
-          bg-blue-400
-        "
-      >
-        <div class="flex items-center justify-center">
-          <img class="mt-4" src="user.png" alt="" />
-        </div>
-        <div class="flex flex-col items-center justify-center">
-          <div class="text-white">michael</div>
-          <div class="text-white">graphics</div>
-        </div>
-
-        <div class="text-white ml-3">latest masseges</div>
-        <div class="card w-64 h-28 ml-3 mt-3 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">title</h2>
-            <p>text:</p>
+      <div class="w-3/12 hidden 2xl:block xl:block lg:hidden md:hidden ml-10">
+        <div class="flex relative">
+          <div>
+            <div
+              class="
+                absolute
+                flex
+                items-center
+                justify-center
+                flex-col
+                ml-20
+                mt-3
+              "
+            >
+              <div class="flex items-center justify-center">
+                <img class="mt-4" src="user.png" alt="" />
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <div class="text-white">michael</div>
+                <div class="text-white">graphics</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card mt-3 w-64 h-28 ml-3 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">title</h2>
-            <p>text:</p>
+          <div class="absolute mt-40">
+            <div class="text-white ml-3">latest masseges</div>
+            <div class="card w-64 h-28 ml-3 mt-3 bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">title</h2>
+                <p>text:</p>
+              </div>
+            </div>
+            <div class="card mt-3 w-64 h-28 ml-3 bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">title</h2>
+                <p>text:</p>
+              </div>
+            </div>
+            <div class="card w-64 h-28 mt-3 ml-3 bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">title</h2>
+                <p>text:</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card w-64 h-28 mt-3 ml-3 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">title</h2>
-            <p>text:</p>
-          </div>
+          <img src="logo.png" class="w-72 h-screen" alt="" />
         </div>
       </div>
       <div class="2xl:w-8/12 xl:w-8/12 lg:w-11/12 md:w-11/12 w-11/12">
-        <div
-          class="
-            card
-            2xl:ml-3
-            xl:ml-3
-            lg:ml-3
-            md:ml-6
-            ml-6
-            w-full
-            mt-5
-            h-36
-            bg-gray-400
-            shadow-xl
-          "
-        >
-          <div class="card-title"></div>
-        </div>
+        <img src="logoone.png" class="w-full ml-6" alt="" />
         <div class="mt-5 flex items-center justify-center px-2 w-full">
           <div class="relative">
             <div class="absolute left-64 inset-y-0 pl-3 flex items-center">

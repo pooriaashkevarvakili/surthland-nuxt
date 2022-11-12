@@ -2,7 +2,7 @@
   <div>
     <div class="flex">
       <div class="w-1/2 hidden 2xl:block xl:block lg:block md:hidden">
-        <div class="ml-10 bg-blue-500 rounded-xl w-64 h-screen"></div>
+        <img src="logo.png" class="w-72 ml-6 h-screen" alt="" />
       </div>
       <div class="w-2/3 flex items-center justify-center -mt-20">
         <div
