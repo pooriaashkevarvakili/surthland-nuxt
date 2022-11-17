@@ -13,34 +13,28 @@ const signup = {
         }
     },
     actions: {
-        getUsers({ commit }) {
+        async getUsers({ commit }, item) {
+            try {
+                console.log(item);
+                const { phone = "", password, email, password_confirmation } = item.data
+                const httpResponse = await this.$axios.post("api/auth/register", {
+                    phone,
+                    password,
+                    email,
+                    password_confirmation
+                });
+                const { token } = httpResponse.data
+                localStorage.setItem("token", token);
 
-            this.$axios.post('api/auth/register', {
-                phone: '',
-                password: '',
-                email: '',
-                password_confirmation: '',
-
-
-            }).then(res => {
-
-                res.data
-                res.data.phone
-                res.data.password
-                res.data.email
-                res.data.password_confirmation
-
-                commit('users_Sign_Up')
-
-                localStorage.setItem('token', res.data)
-            }).catch(error => {
-
+            } catch (error) {
                 alert(error)
                 console.log(error)
-            })
+            }
         }
 
     }
 
 }
+
+
 export default signup

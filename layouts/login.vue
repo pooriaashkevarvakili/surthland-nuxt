@@ -58,7 +58,7 @@
               <form @submit.prevent="getLogin">
                 <input
                   placeholder="phone"
-                  v-model="phone"
+                  v-model="login.phone"
                   class="
                     border
                     mt-3
@@ -76,7 +76,7 @@
                 <input
                   placeholder="password"
                   type="password"
-                  v-model="password"
+                  v-model="login.password"
                   class="
                     border
                     2xl:ml-10
@@ -159,8 +159,10 @@
 export default {
   data() {
     return {
-      phone: "",
-      password: "",
+      login: {
+        phone: "",
+        password: "",
+      },
     };
   },
   methods: {
@@ -171,7 +173,7 @@ export default {
       this.$router.push("/signup");
     },
     getLogin() {
-      this.$store.dispatch("login/loginGet");
+      this.$store.dispatch("login/loginGet", { data: this.login });
     },
   },
 };

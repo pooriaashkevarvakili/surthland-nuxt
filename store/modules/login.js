@@ -12,18 +12,22 @@ const login = {
         }
     },
     actions: {
-        loginGet({commit}) {
-            this.$axios.post('api/auth/login', {
-                password: "",
-                phone: ""
-            }).then(res => {
-                res.data
-                console.log(res.data);
-                commit('login')
-            }).catch(error => {
+        async loginGet({ commit }, item) {
+            try {
+                console.log(item);
+                const { password = "12345678", phone = "09376720694" } = item
+                const httpResponse = await this.$axios.post("api/auth/login", {
+                    phone,
+                    password,
+
+                });
+                const { token } = httpResponse.data
+                localStorage.setItem("token", token);
+
+            } catch (error) {
                 alert(error)
                 console.log(error)
-            })
+            }
         }
     }
 }
