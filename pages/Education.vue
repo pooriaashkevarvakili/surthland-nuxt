@@ -138,15 +138,15 @@ export default {
   },
   computed: {
     ...mapState({
-      education: (state) => state.education,
+      education: (state) => state.education.education,
     }),
   },
   methods: {
     deleteTask(id) {
-      this.$store.dispatch("delete", id);
+      this.$store.dispatch("education/delete", id);
     },
     addEducation() {
-      this.$store.dispatch("addEducation", this.name);
+      this.$store.dispatch("education/addEducation", this.name);
     },
   },
 };

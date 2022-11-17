@@ -32,7 +32,7 @@
           </div>
 
           <div
-            v-for="item in education"
+            v-for="item in experience"
             :key="item.id"
             class="flex justify-between"
           >
@@ -149,15 +149,15 @@ export default {
   },
   computed: {
     ...mapState({
-      education: (state) => state.education,
+      experience: (state) => state.experience.experience,
     }),
   },
   methods: {
     deleteTask(id) {
-      this.$store.dispatch("delete", id);
+      this.$store.dispatch("experience/deleteExperience", id);
     },
     addExperience() {
-      this.$store.dispatch("addExperience", this.name);
+      this.$store.dispatch("experience/addExperience", this.name);
     },
   },
 };

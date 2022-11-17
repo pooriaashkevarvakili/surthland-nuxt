@@ -1,62 +1,34 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import education from "./modules/education"
+import experience from "./modules/experience"
+import skills from "./modules/skills"
+import signup from "./modules/signup"
+import login from "./modules/login"
 Vue.use(Vuex)
 export const state = () => ({
-    education: [
-        {
-            id: 1,
-            name: 'education1'
-        }
-    ],
-    experience: [
-        {
-            id: 1,
-            name: 'experience1'
-        }
-    ],
-    skills: [
-        {
-            id: 1,
-            name: 'skills1'
-        }
-    ]
+
 })
 export const getters = {
 
 }
 export const mutations = {
-    delete(state, id) {
-        state.education = state.education.filter(todo => todo.id != id)
-    },
-    deleteExperience(state, id) {
-        state.experience = state.experience.filter(todo => todo.id != id)
-    },
-    deleteSkills(state, id) {
-        state.skills = state.skills.filter(todo => todo.id != id)
 
-    },
-    addEducation(state, name) {
-        state.education.push(name)
-    },
-    addExperience(state, name) {
-        state.experience.push(name)
-    }
+
+
+
 }
 export const actions = {
-    delete({ commit }, id) {
-        commit('delete', id)
-    },
-    deleteExperience({ commit }, id) {
-        commit('deleteExperience', id)
-    },
-    deleteSkills({ commit }, id) {
-        commit('deleteSkills', id)
-    },
-    addEducation({ commit }, name) {
-        commit('addEducation', name)
-    },
-    addExperience({ commit }, name) {
-        commit('addExperience', name)
-    }
+
+
+
+
+
+}
+export const modules = {
+    education,
+    experience,
+    skills,
+    signup,
+    login
 }

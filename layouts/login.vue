@@ -55,88 +55,98 @@
               enter your username the login
             </div>
             <div class="flex flex-col">
-              <input
-                placeholder="usernameorphonenumber"
-                class="
-                  border
-                  mt-3
-                  2xl:ml-10
-                  xl:ml-10
-                  lg:ml-10
-                  md:ml-2
-                  ml-2
-                  w-52
-                  border-black
-                  input
-                "
-                type="text"
-              />
-              <input
-                placeholder="password"
-                type="password"
-                class="
-                  border
-                  2xl:ml-10
-                  xl:ml-10
-                  lg:ml-10
-                  md:ml-2
-                  ml-2
-                  mt-5
-                  w-52
-                  border-black
-                  input
-                "
-              />
-            </div>
-            <div>
-              <nuxt-link
-                class="2xl:ml-10 xl:ml-10 lg:ml-10 md:ml-2 ml-2 text-blue-200"
-                to="/forgotpassword"
-                >forgotPassword</nuxt-link
-              >
-            </div>
-            <div
-              class="
-                card-actions
-                2xl:flex
-                xl:flex
-                lg:flex-col
-                md:flex-col
-                flex-col
-              "
-            >
-              <button
-                @click="routerChange"
-                class="
-                  btn
-                  w-52
-                  2xl:ml-10
-                  xl:ml-10
-                  lg:ml-10
-                  md:ml-2
-                  ml-2
-                  btn-primary
-                  mt-3
-                "
-              >
-                Login
-              </button>
-              <button
-                @click="routerChangeOne"
-                class="
-                  btn
-                  w-52
-                  2xl:ml-10
-                  xl:ml-10
-                  lg:ml-10
-                  md:ml-2
-                  ml-2
-                  btn-primary
-                  mt-3
-                "
-              >
-                Signup
-              </button>
+              <form @submit.prevent="getLogin">
+                <input
+                  placeholder="phone"
+                  v-model="phone"
+                  class="
+                    border
+                    mt-3
+                    2xl:ml-10
+                    xl:ml-10
+                    lg:ml-10
+                    md:ml-2
+                    ml-2
+                    w-52
+                    border-black
+                    input
+                  "
+                  type="number"
+                />
+                <input
+                  placeholder="password"
+                  type="password"
+                  v-model="password"
+                  class="
+                    border
+                    2xl:ml-10
+                    xl:ml-10
+                    lg:ml-10
+                    md:ml-2
+                    ml-2
+                    mt-5
+                    w-52
+                    border-black
+                    input
+                  "
+                />
+                <div>
+                  <nuxt-link
+                    class="
+                      2xl:ml-10
+                      xl:ml-10
+                      lg:ml-10
+                      md:ml-2
+                      ml-2
+                      text-blue-200
+                    "
+                    to="/forgotpassword"
+                    >forgotPassword</nuxt-link
+                  >
+                </div>
+                <div
+                  class="
+                    card-actions
+                    2xl:flex
+                    xl:flex
+                    lg:flex-col
+                    md:flex-col
+                    flex-col
+                  "
+                >
+                  <button
+                    @click="routerChange"
+                    class="
+                      btn
+                      w-52
+                      2xl:ml-10
+                      xl:ml-10
+                      lg:ml-10
+                      md:ml-2
+                      ml-2
+                      btn-primary
+                      mt-3
+                    "
+                  >
+                    Login
+                  </button>
+                  <button
+                    class="
+                      btn
+                      w-52
+                      2xl:ml-10
+                      xl:ml-10
+                      lg:ml-10
+                      md:ml-2
+                      ml-2
+                      btn-primary
+                      mt-3
+                    "
+                  >
+                    Signup
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -147,12 +157,21 @@
   
   <script>
 export default {
+  data() {
+    return {
+      phone: "",
+      password: "",
+    };
+  },
   methods: {
     routerChange() {
       this.$router.push("/header");
     },
     routerChangeOne() {
       this.$router.push("/signup");
+    },
+    getLogin() {
+      this.$store.dispatch("login/loginGet");
     },
   },
 };

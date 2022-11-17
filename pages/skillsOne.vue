@@ -40,16 +40,16 @@
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
+import { mapState } from "vuex";
 export default {
   computed: {
     ...mapState({
-      skills: (state) => state.skills,
+      skills: (state) => state.skills.skills,
     }),
   },
   methods: {
     deleteSkills(id) {
-      this.$store.dispatch("deleteSkills", id);
+      this.$store.dispatch("skills/deleteSkills", id);
     },
   },
 };
