@@ -39,20 +39,16 @@
             </div>
             <div
               class="
-                card-title
-                2xl:text-base
-                xl:text-base
-                lg:text-sm
-                text-base
-                md:text-base
-                2xl:ml-10
-                xl:ml-10
-                lg:ml-10
-                md:ml-2
-                ml-2
+                flex
+                2xl:px-10
+                xl:px-10
+                lg:px-10
+                md:px-2
+                px-2
+                justify-between
               "
             >
-              enter your username the login
+              <div>Enter your username to login</div>
             </div>
             <div class="flex flex-col">
               <form @submit.prevent="getLogin">

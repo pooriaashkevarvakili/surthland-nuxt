@@ -31,7 +31,7 @@
                 2xl:ml-0
                 xl:ml-0
                 lg:ml-0
-                md:ml-16
+                md:ml-0
                 ml-6
                 mt-3
                 flex
@@ -43,39 +43,37 @@
             </div>
             <div
               class="
+                2xl:ml-0
+                xl:ml-0
                 card-title
-                2xl:px-20
-                xl:px-20
-                lg:px-20
-                md:px-2
+                2xl:px-16
+                xl:px-16
+                lg:px-6
+                md:px-8
                 px-2
                 flex
                 justify-between
               "
             >
               welcome
-
-              <nuxt-link
-                class="2xl:block xl:block lg:block md:hidden hidden"
-                to="/login"
-                >login</nuxt-link
-              >
+            </div>
+            <div
+              class="
+                2xl:ml-0
+                xl:ml-0
+                card-title
+                2xl:px-16
+                xl:px-16
+                lg:px-6
+                md:px-8
+                px-2
+                flex
+                justify-between
+              "
+            >
+              enter your username to signup
             </div>
             <div class="card-title flex flex-col">
-              <span
-                class="
-                  2xl:w-72 2xl:ml-0
-                  xl:ml-0
-                  lg:ml-10
-                  md:-ml-24
-                  ml-2
-                  xl:w-72
-                  lg:w-72
-                  md:w-72
-                  w-72
-                "
-                >enter your username to signup</span
-              >
               <form @submit.prevent="getApi">
                 <input
                   v-model="login.email"
@@ -86,59 +84,39 @@
                     border
                     2xl:ml-16
                     xl:ml-16
-                    lg:ml-0
-                    md:ml-2
+                    lg:ml-8
+                    md:ml-10
                     ml-2
                     border-gray-300
                     2xl:w-72
                     xl:w-72
                     lg:w-72
-                    md:w-full
+                    md:w-72
                     w-64
                     mt-5
                   "
                 />
                 <div>
                   <div class="flex mt-5">
-                    <select
-                      class="
-                        select
-                        2xl:ml-10
-                        xl:ml-10
-                        ml-0
-                        lg:ml-0
-                        md:ml-2
-                        w-20
-                        max-w-xs
-                      "
-                    >
-                      <option disabled selected>
-                        Pick your favorite Simpson
-                      </option>
-                      <option>Homer</option>
-                      <option>Marge</option>
-                      <option>Bart</option>
-                      <option>Lisa</option>
-                      <option>Maggie</option>
-                    </select>
                     <input
                       type="number"
                       v-model="login.phone"
                       class="
                         input
                         border
-                        2xl:ml-0
-                        xl:ml-0
-                        lg:ml-0
-                        md:ml-2
+                        2xl:ml-16
+                        xl:ml-16
+                        lg:ml-8
+                        md:ml-10
                         border-gray-300
-                        2xl:w-52
-                        xl:w-56
-                        lg:w-52
+                        2xl:w-72
+                        xl:w-72
+                        lg:w-72
                         md:w-72
-                        w-40
+                        w-64
                         ml-3
                       "
+                      placeholder="phone"
                     />
                   </div>
                   <div
@@ -157,8 +135,8 @@
                         absolute
                         2xl:left-64
                         xl:left-64
-                        lg:left-56
-                        md:left-80
+                        lg:left-60
+                        md:left-64
                         left-52
                         inset-y-0
                         pl-3
@@ -191,14 +169,14 @@
                       class="
                         2xl:ml-6
                         xl:ml-6
-                        lg:ml-10
-                        md:ml-2
+                        lg:ml-0
+                        md:ml-10
                         ml-2
                         input
                         2xl:w-72
                         xl:w-72
                         lg:w-72
-                        md:w-full
+                        md:w-72
                         w-64
                         border-gray-300
                         py-4
@@ -218,15 +196,16 @@
                     v-model="login.password_confirmation"
                     class="
                       input
-                      2xl:ml-12
-                      xl:ml-12
-                      lg:ml-12
+                      2xl:ml-16
+                      xl:ml-16
+                      lg:ml-10
                       border border-gray-300
                       2xl:w-72
                       xl:w-72
                       lg:w-72
-                      md:w-full
+                      md:w-72
                       w-64
+                      md:ml-12
                       mt-5
                     "
                   />
@@ -236,13 +215,13 @@
                       btn
                       2xl:w-72
                       xl:w-72
-                      2xl:ml-12
-                      xl:ml-12
-                      lg:ml-12 lg:w-72
+                      2xl:ml-16
+                      xl:ml-16
+                      lg:ml-10 lg:w-72
                       ml-0
-                      md:ml-0
-                      w-72
-                      md:w-full
+                      md:ml-10
+                      w-64
+                      md:w-72
                       mt-5
                       bg-purple-500
                     "
@@ -255,13 +234,13 @@
                         btn
                         2xl:w-72
                         xl:w-72
-                        2xl:ml-12
-                        xl:ml-12
-                        lg:ml-12 lg:w-72
+                        2xl:ml-16
+                        xl:ml-16
+                        lg:ml-10 lg:w-72
                         ml-0
-                        md:ml-0
-                        w-72
-                        md:w-full
+                        md:ml-12
+                        w-64
+                        md:w-72
                         mt-5
                         bg-purple-500
                       "
