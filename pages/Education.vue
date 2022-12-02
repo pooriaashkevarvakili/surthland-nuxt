@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="">
-      <app-tabs class="w-11/12 lg:w-full md:w-full mb-16" :tabList="tabList">
+      <app-tabs class="2xl:w-11/12 xl:w-11/12 lg:w-11/12  5xl:w-full xs:w-full lg:w-full md:w-full mb-16" :tabList="tabList">
         <template v-slot:tabPanel-1>
           <div class="flex justify-between">
             <div>+AddNewEducation</div>

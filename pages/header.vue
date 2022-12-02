@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-300 h-full">
+  <div class="bg-gray-300 ">
     <div class="flex">
       <div class="w-3/12 hidden 2xl:block xl:block lg:hidden md:hidden ml-10">
         <div class="flex relative">
@@ -52,7 +52,7 @@
         <img src="logoone.png" class="w-full ml-6" alt="" />
         <div class="mt-5 flex items-center justify-center px-2 w-full">
           <div class="relative">
-            <div class="absolute left-64 inset-y-0 pl-3 flex items-center">
+            <div class="absolute left-64 xs:left-72 inset-y-0 pl-3 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -73,6 +73,8 @@
               class="
                 input
                 w-80
+                xs:ml-10
+                
                 py-4
                 border
                 rounded-full
@@ -91,6 +93,7 @@
             xl:grid-cols-2
             lg:grid-cols-2
             md:grid-cols-1
+            xs:ml-10
             place-content-center place-items-center
             gap-5
             mt-5

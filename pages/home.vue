@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <div
       class="
         grid grid-cols-1
@@ -10,6 +10,8 @@
         place-content-center place-items-center
         gap-5
         mt-5
+        xs:ml-10
+        
       "
     >
       <select class="select w-full max-w-xs">
@@ -59,7 +61,7 @@
       </div>
     </div>
     <div class="flex items-center justify-center mt-5">
-      <button class="btn 2xl:w-52 xl:w-52 lg:w-52 md:w-7/12 w-7/12 btn-primary">
+      <button class="btn 2xl:w-52 xl:w-52 lg:w-52 md:w-5/12 w-7/12 btn-primary">
         Send for componies
       </button>
     </div>

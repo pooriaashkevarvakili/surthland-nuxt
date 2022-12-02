@@ -8,20 +8,34 @@
       </div>
       <div
         class="
+        
+        
           2xl:ml-0
           xl:ml-0
           flex
           h-64
           mt-10
-          w-full
-          lg:mr-48
-          md:mr-48
-          mr-12
+          
+        
+                   
           items-center
           justify-center
         "
       >
-        <div class="card mt-20 w-96 h-96 bg-base-100 shadow-xl">
+        <div class="card mt-20 2xl:w-full
+          xl:w-full
+          lg:w-full
+          md:w-full
+          sm:w-full
+          lg:mr-48
+          md:mr-60
+          sm:mr-40
+          4xl:mr-32
+          5xl:mr-12
+          xs:mr-9
+          
+          5xl:w-80
+          4xl:w-full   bg-base-100 shadow-xl">
           <div class="card-body">
             <h2 class="card-title flex items-center justify-center">logo</h2>
             <div class="flex items-center justify-center">

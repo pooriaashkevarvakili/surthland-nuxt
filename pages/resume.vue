@@ -23,6 +23,11 @@
               lg:flex-col
               md:flex md:flex-col
               flex-col
+              md:ml-10
+              sm:ml-20
+              4xl:ml-10
+              5xl:ml-0
+              xs:-ml-10
             "
           >
             <img

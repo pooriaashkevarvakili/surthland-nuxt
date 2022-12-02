@@ -18,7 +18,7 @@
       "
     >
       <div
-        class="card 2xl:w-64 xl:w-64 lg:w-64 md:w-80 w-80 bg-base-100 shadow-xl"
+        class="card md:ml-2 2xl:w-64 xl:w-64 lg:w-64 md:w-80 w-80 bg-base-100 shadow-xl"
       >
         <div class="card-body bg-gray-300">
           <h2 class="card-title">job title</h2>
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div
-        class="card 2xl:w-64 xl:w-64 lg:w-64 md:w-80 w-80 bg-base-100 shadow-xl"
+        class="card md:ml-2 2xl:w-64 xl:w-64 lg:w-64 md:w-80 w-80 bg-base-100 shadow-xl"
       >
         <div class="card-body bg-gray-300">
           <h2 class="card-title">job title</h2>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div
-        class="card 2xl:w-64 xl:w-64 lg:w-64 md:w-80 w-80 bg-base-100 shadow-xl"
+        class="card md:ml-2 2xl:w-64 xl:w-64 lg:w-64 md:w-80 w-80 bg-base-100 shadow-xl"
       >
         <div class="card-body bg-gray-300">
           <h2 class="card-title">job title</h2>

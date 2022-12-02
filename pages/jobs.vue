@@ -60,7 +60,8 @@
             xl:w-64
             lg:w-64
             md:w-80
-            w-80
+           
+            md:ml-2
             bg-base-100
             shadow-xl
           "
@@ -78,6 +79,7 @@
             2xl:w-64
             xl:w-64
             lg:w-64
+            md:ml-2
             md:w-80
             w-80
             bg-base-100
@@ -99,6 +101,7 @@
             lg:w-64
             md:w-80
             w-80
+            md:ml-2
             bg-base-100
             shadow-xl
           "

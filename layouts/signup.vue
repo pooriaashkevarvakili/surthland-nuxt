@@ -12,7 +12,11 @@
             xl:w-7/12
             lg:w-7/12
             md:w-full
-            w-full
+            sm:w-full
+            4xl:w-full
+            5xl:w-full
+            xs:w-full
+           
             mt-32
             card-compact
             bg-base-100
@@ -20,8 +24,11 @@
             2xl:ml-0
             xl:ml-0
             lg:ml-0
-            md:ml-32
-            ml-32
+            md:ml-52
+            sm:ml-36
+            4xl:ml-36
+            5xl:ml-36
+            xs:ml-36
           "
         >
           <div class="card-body">
@@ -82,106 +89,72 @@
                   class="
                     input
                     border
+                    4xl:ml-2
                     2xl:ml-16
                     xl:ml-16
                     lg:ml-8
-                    md:ml-10
-                    ml-2
+                    5xl:ml-4
+                    md:ml-8
+                    sm:ml-4
                     border-gray-300
-                    2xl:w-72
-                    xl:w-72
-                    lg:w-72
                     md:w-72
-                    w-64
+                      sm:w-72
+                      4xl:w-72
+                      5xl:w-60
+                      xs:w-52
                     mt-5
                   "
                 />
-                <div>
-                  <div class="flex mt-5">
-                    <input
-                      type="number"
-                      v-model="login.phone"
+                <input
                       class="
-                        input
-                        border
                         2xl:ml-16
                         xl:ml-16
-                        lg:ml-8
-                        md:ml-10
-                        border-gray-300
-                        2xl:w-72
-                        xl:w-72
-                        lg:w-72
-                        md:w-72
-                        w-64
-                        ml-3
-                      "
-                      placeholder="phone"
-                    />
-                  </div>
-                  <div
-                    class="
-                      relative
-                      2xl:ml-12
-                      xl:ml-12
-                      lg:ml-10
-                      md:ml-2
-                      ml-2
-                      mt-3
-                    "
-                  >
-                    <div
-                      class="
-                        absolute
-                        2xl:left-64
-                        xl:left-64
-                        lg:left-60
-                        md:left-64
-                        left-52
-                        inset-y-0
-                        pl-3
-                        flex
-                        items-center
-                      "
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                        />
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-
-                    <input
-                      class="
-                        2xl:ml-6
-                        xl:ml-6
                         lg:ml-0
-                        md:ml-10
-                        ml-2
+                        md:ml-8
+                        xs:ml-1
+                        5xl:ml-4
                         input
-                        2xl:w-72
-                        xl:w-72
-                        lg:w-72
                         md:w-72
-                        w-64
+                      sm:w-72
+                      4xl:w-72
+                      5xl:w-60
+                      xs:w-52
                         border-gray-300
                         py-4
                         border
-                        rounded-full
+                        mt-5
+                        4xl:ml-3
+                        focus:border-blue-500 focus:shadow-outline
+                        outline-none
+                      "
+                      type="number"
+                      v-model="login.phone"
+                      placeholder="phone"
+                    />
+
+                <div>
+                  <div class="flex flex-col mt-5">
+                   
+                    <input
+                      class="
+                      4xl:ml-2
+                      xs:ml-1
+                        2xl:ml-16
+                        xl:ml-16
+                        lg:ml-16
+                        md:ml-8
+                        5xl:ml-4
+                        input
+                        md:w-72
+                      sm:w-72
+                      4xl:w-72
+                      5xl:w-60
+                      xs:w-52
+                        xs:ml-3
+                        border-gray-300
+                        py-4
+                        border
+                        
                         focus:border-blue-500 focus:shadow-outline
                         outline-none
                       "
@@ -198,14 +171,18 @@
                       input
                       2xl:ml-16
                       xl:ml-16
+                      4xl:ml-2
                       lg:ml-10
+                      5xl:ml-4
                       border border-gray-300
-                      2xl:w-72
-                      xl:w-72
-                      lg:w-72
                       md:w-72
-                      w-64
-                      md:ml-12
+                      sm:w-72
+                      4xl:w-72
+                      5xl:w-60
+                      xs:w-52
+
+                     
+                      md:ml-8
                       mt-5
                     "
                   />
@@ -219,9 +196,14 @@
                       xl:ml-16
                       lg:ml-10 lg:w-72
                       ml-0
-                      md:ml-10
-                      w-64
+                      md:ml-8
+                      5xl:ml-4
                       md:w-72
+                      sm:w-72
+                      4xl:w-72
+                      5xl:w-60
+                      xs:w-52
+                      border-none
                       mt-5
                       bg-purple-500
                     "
@@ -231,17 +213,21 @@
                   <nuxt-link to="/login">
                     <button
                       class="
+                      2xl:ml-16
+                      xl:ml-16
+                      lg:ml-16
                         btn
-                        2xl:w-72
-                        xl:w-72
-                        2xl:ml-16
-                        xl:ml-16
-                        lg:ml-10 lg:w-72
+                        md:w-72
+                      sm:w-72
+                      4xl:w-72
+                      5xl:w-60
+                      xs:w-52
                         ml-0
-                        md:ml-12
-                        w-64
+                        md:ml-8
+                        5xl:ml-4
                         md:w-72
                         mt-5
+                        border-none
                         bg-purple-500
                       "
                     >

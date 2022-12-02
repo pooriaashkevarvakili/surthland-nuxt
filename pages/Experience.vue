@@ -20,7 +20,7 @@
     </div>
     <div class="">
       <app-tabs-one
-        class="w-11/12 lg:w-full md:w-full mb-16"
+        class="2xl:w-11/12 xl:w-11/12 lg:w-11/12  5xl:w-full xs:w-full lg:w-full md:w-full mb-16"
         :tabList="tabList"
       >
         <template v-slot:tabPanel-1>

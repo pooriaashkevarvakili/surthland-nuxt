@@ -7,15 +7,25 @@
       <div class="w-2/3 flex mt-48 items-center h-36 justify-center">
         <div
           class="
+         
             card
             2xl:ml-0
             xl:ml-0
             lg:ml-56
-            md:ml-72
-            ml-32
+            md:ml-8
+            xs:ml-2
+            sm:ml-10
             2xl:w-96
             xl:w-96
             lg:w-96
+            sm:w-80
+            sm:ml-4
+            5xl:ml-2
+            5xl:w-64
+            xs:ml-10
+            xs:w-52
+            4xl:ml-2
+            4xl:w-80
             md:w-80
             w-full
             bg-base-100
@@ -62,8 +72,15 @@
                     xl:ml-10
                     lg:ml-10
                     md:ml-2
-                    ml-2
-                    w-52
+                    xl:w-52
+                    lg:w-52
+                    md:w-52
+                    
+                    5xl:w-52
+                    4xl:w-52
+                    5xl:ml-0
+                    xs:w-40
+                    2xl:w-52
                     border-black
                     input
                   "
@@ -78,10 +95,14 @@
                     2xl:ml-10
                     xl:ml-10
                     lg:ml-10
+                    5xl:w-52
+                    xs:w-40
                     md:ml-2
-                    ml-2
+                    xs:ml-0
+                    sm:w-52
+                    4xl:w-52
                     mt-5
-                    w-52
+                    md:w-52
                     border-black
                     input
                   "
@@ -114,14 +135,18 @@
                     @click="routerChange"
                     class="
                       btn
-                      w-52
+                      md:w-52
+                      sm:w-52
                       2xl:ml-10
+                      5xl:w-52
+                      4xl:w-52
                       xl:ml-10
                       lg:ml-10
                       md:ml-2
-                      ml-2
+                      
                       btn-primary
                       mt-3
+                      xs:w-40
                     "
                   >
                     Login
@@ -129,12 +154,15 @@
                   <button
                     class="
                       btn
-                      w-52
+                      md:w-52
+                      sm:w-52
                       2xl:ml-10
                       xl:ml-10
+                      4xl:w-52
+                      5xl:w-52
                       lg:ml-10
                       md:ml-2
-                      ml-2
+                      xs:w-40
                       btn-primary
                       mt-3
                     "
