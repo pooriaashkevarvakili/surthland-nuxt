@@ -1,11 +1,11 @@
 <template>
-  <div></div>
+    <div></div>
 </template>
 
 <script>
 export default {
-  layout: "forgotpassword",
-};
+    layout: 'error'
+}
 </script>
 
 <style>

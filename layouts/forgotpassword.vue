@@ -6,8 +6,7 @@
           <img src="logo.png" class="w-72 h-screen ml-6" alt="" />
         </div>
       </div>
-      <div
-        class="
+      <div class="
         
         
           2xl:ml-0
@@ -20,8 +19,7 @@
                    
           items-center
           justify-center
-        "
-      >
+        ">
         <div class="card mt-20 2xl:w-full
           xl:w-full
           lg:w-full
@@ -46,26 +44,10 @@
               <div class="ml-10"><a class="link">Edit</a></div>
             </div>
             <div class="flex ml-10">
-              <input
-                v-model="number"
-                type="text"
-                class="input border border-black w-10"
-              />
-              <input
-                v-model="number"
-                type="text"
-                class="input border border-black w-10 ml-3"
-              />
-              <input
-                v-model="number"
-                type="text"
-                class="input border border-black w-10 ml-3"
-              />
-              <input
-                v-model="number"
-                type="text"
-                class="input border border-black w-10 ml-3"
-              />
+              <input v-model="number" type="text" class="input border border-black w-10" />
+              <input v-model="number" type="text" class="input border border-black w-10 ml-3" />
+              <input v-model="number" type="text" class="input border border-black w-10 ml-3" />
+              <input v-model="number" type="text" class="input border border-black w-10 ml-3" />
             </div>
             <div class="ml-10 text-red-400">{{ validationError }}</div>
             <div class="flex items-center justify-center">
@@ -80,7 +62,7 @@
     </div>
   </div>
 </template>
-  <script>
+<script>
 export default {
   data() {
     return {
@@ -100,5 +82,6 @@ export default {
 };
 </script>
   
-  <style>
+<style>
+
 </style>

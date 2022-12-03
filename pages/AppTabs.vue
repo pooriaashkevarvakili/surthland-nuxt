@@ -1,11 +1,8 @@
 <template>
-  <div
-    :class="{
-      'flex space-x-4': variant === 'horizontal',
-    }"
-  >
-    <ul
-      class="
+  <div :class="{
+    'flex space-x-4': variant === 'horizontal',
+  }">
+    <ul class="
         list-none
         rounded-lg
         flex
@@ -13,48 +10,28 @@
         mr-4
         -mt-10
         whitespace-nowrap
-      "
-      :class="{
+      " :class="{
         'flex items-center mb-6': variant === 'vertical',
-      }"
-    >
-      <li
-        v-for="(tab, index) in tabList"
-        :key="index"
-        class="w-5/12 flex items-center justify-center px-4 py-1.5 rounded-lg"
-        :class="{
+      }">
+      <li v-for="(tab, index) in tabList" :key="index"
+        class="w-5/12 flex items-center justify-center px-4 py-1.5 rounded-lg" :class="{
           'text-blue-600  shadow-xl': index + 1 === activeTab,
           'text-white': index + 1 !== activeTab,
-        }"
-      >
-        <label
-          :for="`${_uid}${index}`"
-          v-text="tab"
-          class="cursor-pointer block"
-        />
-        <input
-          :id="`${_uid}${index}`"
-          type="radio"
-          :name="`${_uid}-tab`"
-          :value="index + 1"
-          v-model="activeTab"
-          class="hidden"
-        />
+        }">
+        <label :for="`${_uid}${index}`" v-text="tab" class="cursor-pointer block" />
+        <input :id="`${_uid}${index}`" type="radio" :name="`${_uid}-tab`" :value="index + 1" v-model="activeTab"
+          class="hidden" />
       </li>
     </ul>
     <template v-for="(tab, index) in tabList">
-      <div
-        :key="index"
-        v-if="index + 1 === activeTab"
-        class="flex-grow bg-white rounded-lg shadow-xl p-4"
-      >
+      <div :key="index" v-if="index + 1 === activeTab" class="flex-grow bg-white rounded-lg shadow-xl p-4">
         <slot :name="`tabPanel-${index + 1}`" />
       </div>
     </template>
   </div>
 </template>
   
-  <script>
+<script>
 export default {
   props: {
     tabList: {

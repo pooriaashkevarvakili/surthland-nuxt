@@ -1,185 +1,52 @@
 <template>
-  <div>
-    <div class="flex">
-      <div class="hidden 2xl:block xl:block lg:hidden w-4/12 ml-5 rounded-xl">
-        <img class="w-72 h-screen ml-6" src="logo.png" alt="" />
-      </div>
-      <div class="w-2/3 flex mt-48 items-center h-36 justify-center">
-        <div
-          class="
-         
-            card
-            2xl:ml-0
-            xl:ml-0
-            lg:ml-56
-            md:ml-8
-            xs:ml-2
-            sm:ml-10
-            2xl:w-96
-            xl:w-96
-            lg:w-96
-            sm:w-80
-            sm:ml-4
-            5xl:ml-2
-            5xl:w-64
-            xs:ml-10
-            xs:w-52
-            4xl:ml-2
-            4xl:w-80
-            md:w-80
-            w-full
-            bg-base-100
-            shadow-xl
-          "
-        >
-          <div class="card-body">
-            <div class="flex card-title items-center justify-center">logo</div>
-            <div
-              class="
-                flex
-                2xl:px-10
-                xl:px-10
-                lg:px-10
-                md:px-2
-                px-2
-                justify-between
-              "
-            >
-              <div>welcome</div>
+  <div class="bg-pink-300">
+    <div class="flex items-center justify-center w-full h-screen">
+      <div class="
+          card
+          2xl:w-96
+          xl:w-96
+          lg:w-96
+          md:w-96
+          2xl:mr-0
+          xl:mr-0
+          lg:mr-0
+          bg-base-100
+          shadow-xl
+        ">
+        <figure>
+          <img src="bg.jpg.webp" class="w-32 h-32 rounded-full mt-5" />
+        </figure>
+        <div class="card-body">
+          <div class="card-title flex items-center justify-center">
+            خوش اومدید
+          </div>
+          <div class="card-title flex items-center justify-center">ثبت نام</div>
+          <form>
+            <div class="card-title">
+              <input placeholder="phone" v-model="login.phone" style="direction: rtl"
+                class="input border mt-3 w-full border-gray-300" type="number" />
             </div>
-            <div
-              class="
-                flex
-                2xl:px-10
-                xl:px-10
-                lg:px-10
-                md:px-2
-                px-2
-                justify-between
-              "
-            >
-              <div>Enter your username to login</div>
+            <div class="card-title">
+              <input style="direction: rtl" class="input w-full border border-gray-300 mt-3" placeholder="پسورد"
+                type="password" v-model="login.password" />
             </div>
-            <div class="flex flex-col">
-              <form @submit.prevent="getLogin">
-                <input
-                  placeholder="phone"
-                  v-model="login.phone"
-                  class="
-                    border
-                    mt-3
-                    2xl:ml-10
-                    xl:ml-10
-                    lg:ml-10
-                    md:ml-2
-                    xl:w-52
-                    lg:w-52
-                    md:w-52
-                    
-                    5xl:w-52
-                    4xl:w-52
-                    5xl:ml-0
-                    xs:w-40
-                    2xl:w-52
-                    border-black
-                    input
-                  "
-                  type="number"
-                />
-                <input
-                  placeholder="password"
-                  type="password"
-                  v-model="login.password"
-                  class="
-                    border
-                    2xl:ml-10
-                    xl:ml-10
-                    lg:ml-10
-                    5xl:w-52
-                    xs:w-40
-                    md:ml-2
-                    xs:ml-0
-                    sm:w-52
-                    4xl:w-52
-                    mt-5
-                    md:w-52
-                    border-black
-                    input
-                  "
-                />
-                <div>
-                  <nuxt-link
-                    class="
-                      2xl:ml-10
-                      xl:ml-10
-                      lg:ml-10
-                      md:ml-2
-                      ml-2
-                      text-blue-200
-                    "
-                    to="/forgotpassword"
-                    >forgotPassword</nuxt-link
-                  >
-                </div>
-                <div
-                  class="
-                    card-actions
-                    2xl:flex
-                    xl:flex
-                    lg:flex-col
-                    md:flex-col
-                    flex-col
-                  "
-                >
-                  <button
-                    @click="routerChange"
-                    class="
-                      btn
-                      md:w-52
-                      sm:w-52
-                      2xl:ml-10
-                      5xl:w-52
-                      4xl:w-52
-                      xl:ml-10
-                      lg:ml-10
-                      md:ml-2
-                      
-                      btn-primary
-                      mt-3
-                      xs:w-40
-                    "
-                  >
-                    Login
-                  </button>
-                  <button
-                    class="
-                      btn
-                      md:w-52
-                      sm:w-52
-                      2xl:ml-10
-                      xl:ml-10
-                      4xl:w-52
-                      5xl:w-52
-                      lg:ml-10
-                      md:ml-2
-                      xs:w-40
-                      btn-primary
-                      mt-3
-                    "
-                  >
-                    Signup
-                  </button>
-                </div>
-              </form>
-            </div>
+          </form>
+
+          <div class="card-actions">
+            <nuxt-link to="/" class="btn mt-2 w-full btn-primary">ثبت نام</nuxt-link>
+          </div>
+          <div class="card-actions">
+            <nuxt-link to="/header" class="btn mt-2 w-full btn-primary">ورود</nuxt-link>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-  
-  <script>
+<style>
+
+</style>
+<script>
 export default {
   data() {
     return {
@@ -202,6 +69,3 @@ export default {
   },
 };
 </script>
-  
-  <style>
-</style>
